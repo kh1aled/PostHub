@@ -39,4 +39,4 @@ Phoshub is a web application that allows users to share, explore, and interact w
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/phoshub-frontend.git
+   git clone https://github.com/kh1aled/phoshub-frontend.git
