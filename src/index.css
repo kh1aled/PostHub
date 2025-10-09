@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Zain:wght@200;300;400;700;800;900&display=swap");
+*, html {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  font-family: "Zain", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  outline: none;
+  border: none;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+a {
+  color: #fff;
+  text-decoration: none !important;
+}
+
+section {
+  width: 100vw;
+}
+
+h1, h2, h3, h4, h5 {
+  color: white;
+  line-height: 1.3;
+}
+@media (max-width: 1200px) {
+  h1 h1, h2 h1, h3 h1, h4 h1, h5 h1 {
+    font-size: 1.6rem;
+  }
+  h1 h2, h2 h2, h3 h2, h4 h2, h5 h2 {
+    font-size: 1.3rem;
+  }
+  h1 h3, h2 h3, h3 h3, h4 h3, h5 h3 {
+    font-size: 0.8rem;
+  }
+  h1 h4, h2 h4, h3 h4, h4 h4, h5 h4 {
+    font-size: 0.6rem;
+  }
+  h1 h4, h2 h4, h3 h4, h4 h4, h5 h4 {
+    font-size: 0.4rem;
+  }
+}
+
+.message {
+  width: 100%;
+  padding: 5px 20px;
+  border-radius: 10px;
+  display: none;
+  font-size: 3vmin;
+  text-transform: capitalize;
+  transform: scale(0);
+  transition: 0.3s;
+}
+.message.error {
+  display: block;
+  background-color: rgba(188, 20, 20, 0.3058823529);
+  color: rgb(199, 15, 15);
+  transform: scale(1);
+}
+.message.success {
+  display: block;
+  background-color: rgba(17, 194, 25, 0.3058823529);
+  color: rgb(37, 185, 20);
+  transform: scale(1);
+}/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,71 @@
+/*!*****************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./src/app/Login/SignIn/SignIn.css ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************/
+.SignIn {
+  width: 100%;
+  height: 100vh;
+  background-color: #F0F2F5;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+.SignIn .facebook_image {
+  margin: 10px auto;
+}
+.SignIn .title {
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1), 0px 8px 16px rgba(0, 0, 0, 0.1);
+}
+.SignIn .title .top_title {
+  color: #1c1e21;
+  font-family: SFProDisplay-Bold, Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  line-height: 38px;
+  margin-bottom: 0;
+}
+.SignIn form {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1), 0px 8px 16px rgba(0, 0, 0, 0.1);
+}
+.SignIn form input {
+  border-radius: 6px;
+  font-size: 18px;
+  padding: 14px 16px;
+  border: 1px solid #dddfe2;
+  font-family: Helvetica, Arial, sans-serif;
+}
+.SignIn form input.err {
+  border: 1px solid rgb(239 68 68/var(--tw-border-opacity, 1));
+}
+.SignIn form .error {
+  margin: 10px 0;
+}
+.SignIn form .submitBtn {
+  background-color: #1877F2;
+  font-size: 20px;
+  width: 100%;
+}
+.SignIn form .signUpBtn {
+  background-color: #00A400;
+}
+.SignIn .create_account {
+  border-top: 1px solid #b3b3b3;
+  padding-top: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: 17px;
+}
+.SignIn .create_account .or {
+  position: absolute;
+  top: -14px;
+  right: 41%;
+  transform: translateX(-50%);
+  background: #ffffff;
+  padding: 5px 10px;
+}/*# sourceMappingURL=SignIn.css.map */

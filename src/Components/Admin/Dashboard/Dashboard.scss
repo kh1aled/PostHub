@@ -1,0 +1,200 @@
+@use "../../../styles/variables/colors" as *;
+@use "../../../styles/variables/mediaQuery" as *;
+@use "../../../styles/mixins" as *;
+
+%image {
+  width: 100%;
+  height: 100%;
+  background-repeat: none;
+  background-size: contain;
+}
+
+.dashboard {
+  background-color: $mainColor-2;
+  padding: 6rem 0;
+
+  .dashboard_container {
+    width: 90%;
+    margin: auto;
+    background-color: #2a286b;
+    padding: 25px;
+    margin-top: 80px;
+
+    .slide:nth-child(1) {
+      padding: 15px;
+
+      @include mediaQuery($medScreen_max_width) {
+        width: 50%;
+        margin: auto;
+      }
+      @include mediaQuery($smallScreen_max_width) {
+        width: 70% !important;
+        margin: auto;
+      }
+      @include mediaQuery($Tablet_max_width) {
+        width: 100% !important;
+        margin: auto;
+      }
+
+      .list-itmes {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        box-shadow: 0 0 20px 0px rgb(7, 9, 65);
+        li {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: $mainColor;
+          border-bottom: 2px solid #000;
+          cursor: pointer;
+          &.active {
+            background-color: transparent;
+          }
+          &:hover {
+            background-color: transparent;
+            border-bottom: none;
+          }
+          a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5%;
+            width: 100%;
+            height: 100%;
+            padding: 20px;
+
+            color: #fff;
+            i {
+              font-size: 2vmin;
+              width: 20%;
+
+              text-align: center;
+            }
+            span {
+              font-size: 3vmin;
+              width: 75%;
+              text-wrap: nowrap;
+              padding: 0 0.5rem;
+              text-align: start;
+              @include mediaQuery($Tablet_max_width) {
+                font-size: 4.5vmin;
+              }
+            }
+          }
+        }
+      }
+    }
+    .slide:nth-child(2) {
+      padding-left: 2rem;
+      overflow-x: scroll;
+      &::-webkit-scrollbar {
+        width: 20px;
+      }
+    }
+  }
+}
+// .unique_post {
+//   width: 80% !important;
+
+//   overflow: hidden;
+//   margin: auto;
+//   margin-bottom: 2.6rem;
+
+//   .post_thumbail {
+//     height: 100%;
+//     border: 1rem solid #1c1d5f;
+//     border-top-left-radius: 70px;
+//     border-top-right-radius: 0;
+//     border-bottom-left-radius: 0;
+//     border-bottom-right-radius: 70px;
+//     height: 100%;
+//     img {
+//       filter: saturate(1);
+//       transform: filter 0.5s ease;
+//       @extend %image;
+//       border-top-left-radius: 55px;
+//       border-top-right-radius: 0;
+//       border-bottom-left-radius: 0;
+//       border-bottom-right-radius: 55px;
+//       &:hover {
+//         filter: saturate(0);
+//       }
+//     }
+//   }
+//   .post_info {
+//     display: flex;
+//     justify-content: center;
+//     align-items: start;
+//     flex-direction: column;
+//     height: 100%;
+//     gap: 0.3rem;
+//     padding: 0 !important;
+//     .categroy_button {
+//       display: inline-block;
+//       padding: 0.5rem 1rem;
+//       background-color: #1c1d5f;
+//       border-radius: 5px;
+//       color: #6f6af8;
+//       font-size: 0.8rem;
+//       text-align: center;
+//       transition: 0.4s;
+
+//       &:hover {
+//         color: #f2f2fe;
+//       }
+//     }
+//     .post_title {
+//       a {
+//         font-size: 1.4rem;
+//         font-weight: bold;
+//         color: #fff !important;
+//       }
+//     }
+//     .post_body {
+//       font-size: 1rem;
+//       color: #ffffff7a;
+//       margin: 0;
+//     }
+//     .post_author {
+//       display: flex;
+//       justify-content: start;
+//       align-items: center;
+//       gap: 1rem;
+
+//       .post_author_avatar {
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//         img {
+//           @extend %image;
+//           width: 2.5rem;
+//           height: 2.5rem;
+//           border-radius: 50%;
+//         }
+//       }
+//       .post_author_info {
+//         width: 80%;
+//         height: 100%;
+//         padding: 10px;
+
+//         ul {
+//           list-style: none;
+//           padding: 0;
+//           margin: 0;
+//           li {
+//             color: #fff;
+//             &:nth-child(2) {
+//               color: #ffffff61;
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }

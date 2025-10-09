@@ -1,0 +1,58 @@
+.SignIn {
+  width: 100%;
+  height: 100vh;
+  background-color: #1c1d5f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.SignIn .container {
+  width: 50%;
+}
+@media (max-width: 768px) {
+  .SignIn .container {
+    width: 80%;
+  }
+}
+.SignIn .container .title {
+  color: #fff;
+  font-size: 33px;
+}
+.SignIn .container .form-group {
+  margin: 15px 0px;
+}
+.SignIn .container .form-group input {
+  background-color: #5854c7;
+  outline: 0;
+  border: 0;
+  color: #fff;
+  font-size: 22px;
+}
+.SignIn .container .form-group input::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.6039215686);
+}
+.SignIn .container .form-group input::placeholder {
+  color: rgba(255, 255, 255, 0.6039215686);
+}
+.SignIn .container .form-group input:focus {
+  border: none;
+}
+.SignIn .container .btn {
+  text-transform: capitalize;
+  background-color: #6f6af8;
+  color: #fff;
+  padding: 0.375rem 1.375rem;
+}
+.SignIn .container .btn:checked {
+  background-color: #6f6af8;
+  color: #fff;
+}
+.SignIn .container p {
+  margin: 20px 0;
+  font-size: 20px;
+  color: #fff;
+}
+.SignIn .container p a {
+  color: #5555e7;
+  text-transform: capitalize;
+}/*# sourceMappingURL=SignIn.css.map */

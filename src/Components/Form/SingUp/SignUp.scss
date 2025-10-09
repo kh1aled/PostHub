@@ -1,0 +1,77 @@
+@use "../../../styles/variables/colors" as *;
+@use "../../../styles/variables/mediaQuery" as *;
+@use "../../../styles/mixins" as *;
+
+.SignUp {
+  width: 100%;
+  background-color: $mainColor-2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .container {
+    margin-top: 100px;
+    width: 50%;
+    @include mediaQuery($smallScreen_max_width) {
+      width: 80%;
+    }
+    .title {
+      color: #fff;
+      font-size: 33px;
+    }
+    .form-group {
+      margin: 15px 0px;
+      input {
+        background-color: $bg-color;
+        outline: 0;
+        border: 0;
+        color: #fff;
+        font-size: 22px;
+        width: 100% !important;
+        &.form-control-file {
+          color: rgba(255, 255, 255, 0.6039215686);
+          padding: 10px 20px;
+          border-radius: 11px;
+          cursor: pointer;
+          &::-webkit-file-upload-button {
+            background-color: $mainColor;
+            outline: 0;
+            border: 0;
+            color: #fff;
+            font-size: 3vmin;
+            border-radius: 4px;
+          }
+        }
+        &::placeholder {
+          color: #ffffff9a;
+        }
+        &:focus {
+          border: none;
+        }
+      }
+      label {
+        width: 100%;
+        font-size: 20px;
+        color: #ffffff6e;
+      }
+    }
+    .btn {
+      text-transform: capitalize;
+      background-color: $mainColor;
+      color: #fff;
+      padding: 0.375rem 1.375rem;
+      &:checked {
+        background-color: $mainColor;
+        color: #fff;
+      }
+    }
+    p {
+      margin: 20px 0;
+      font-size: 20px;
+      color: #fff;
+      a {
+        color: #5555e7;
+        text-transform: capitalize;
+      }
+    }
+  }
+}

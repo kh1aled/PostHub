@@ -1,0 +1,92 @@
+.AddUser {
+  width: 100%;
+  height: 100vh;
+  background-color: #1c1d5f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: scroll;
+  padding: 20px 0;
+  margin-top: 70px;
+  overflow-y: hidden;
+}
+.AddUser .container {
+  margin-top: 80px;
+  width: 50%;
+}
+@media (max-width: 768px) {
+  .AddUser .container {
+    width: 80%;
+  }
+}
+.AddUser .container .title {
+  color: #fff;
+  font-size: 33px;
+}
+.AddUser .container .form-group {
+  margin: 15px 0px;
+}
+.AddUser .container .form-group input {
+  background-color: #5854c7;
+  outline: 0;
+  border: 0;
+  color: #fff;
+  font-size: 22px;
+  width: 100% !important;
+}
+.AddUser .container .form-group input.form-control-file {
+  color: rgba(255, 255, 255, 0.6039215686);
+  padding: 10px 20px;
+  border-radius: 11px;
+  cursor: pointer;
+}
+.AddUser .container .form-group input.form-control-file::-webkit-file-upload-button {
+  background-color: #6f6af8;
+  outline: 0;
+  border: 0;
+  color: #fff;
+  font-size: 3vmin;
+  border-radius: 4px;
+}
+.AddUser .container .form-group input::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.6039215686);
+}
+.AddUser .container .form-group input::placeholder {
+  color: rgba(255, 255, 255, 0.6039215686);
+}
+.AddUser .container .form-group input:focus {
+  border: none;
+}
+.AddUser .container .form-select {
+  margin: 15px 0px;
+  background-color: #5854c7;
+  outline: 0;
+  border: 0;
+  color: #fff;
+  font-size: 22px;
+  width: 100% !important;
+}
+.AddUser .container label {
+  width: 100%;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.431372549);
+}
+.AddUser .container .btn {
+  text-transform: capitalize;
+  background-color: #6f6af8;
+  color: #fff;
+  padding: 0.375rem 1.375rem;
+}
+.AddUser .container .btn:checked {
+  background-color: #6f6af8;
+  color: #fff;
+}
+.AddUser .container p {
+  margin: 20px 0;
+  font-size: 20px;
+  color: #fff;
+}
+.AddUser .container p a {
+  color: #5555e7;
+  text-transform: capitalize;
+}/*# sourceMappingURL=AddUserStyles.css.map */

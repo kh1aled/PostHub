@@ -1,0 +1,195 @@
+.AddPost,
+.EditPost {
+  width: 100%;
+  height: 100vh;
+  background-color: #1c1d5f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: scroll;
+  padding: 20px 0;
+}
+.AddPost .container,
+.EditPost .container {
+  margin-top: 80px;
+  width: 50%;
+}
+@media (max-width: 768px) {
+  .AddPost .container,
+  .EditPost .container {
+    width: 80%;
+  }
+}
+.AddPost .container .title,
+.EditPost .container .title {
+  color: #fff;
+  font-size: 33px;
+}
+.AddPost .container .form-group,
+.EditPost .container .form-group {
+  margin: 15px 0px;
+}
+.AddPost .container .form-group input,
+.AddPost .container .form-group textarea,
+.EditPost .container .form-group input,
+.EditPost .container .form-group textarea {
+  background-color: #5854c7;
+  outline: 0;
+  border: 0;
+  color: #fff;
+  font-size: 22px;
+}
+.AddPost .container .form-group input.form-control-file,
+.AddPost .container .form-group textarea.form-control-file,
+.EditPost .container .form-group input.form-control-file,
+.EditPost .container .form-group textarea.form-control-file {
+  color: rgba(255, 255, 255, 0.6039215686);
+  padding: 10px 20px;
+  border-radius: 11px;
+  cursor: pointer;
+}
+.AddPost .container .form-group input.form-control-file::-webkit-file-upload-button,
+.AddPost .container .form-group textarea.form-control-file::-webkit-file-upload-button,
+.EditPost .container .form-group input.form-control-file::-webkit-file-upload-button,
+.EditPost .container .form-group textarea.form-control-file::-webkit-file-upload-button {
+  background-color: #6f6af8;
+  outline: 0;
+  border: 0;
+  color: #fff;
+  font-size: 3vmin;
+  border-radius: 4px;
+}
+.AddPost .container .form-group input::-moz-placeholder, .AddPost .container .form-group textarea::-moz-placeholder, .EditPost .container .form-group input::-moz-placeholder, .EditPost .container .form-group textarea::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.6039215686);
+}
+.AddPost .container .form-group input::placeholder,
+.AddPost .container .form-group textarea::placeholder,
+.EditPost .container .form-group input::placeholder,
+.EditPost .container .form-group textarea::placeholder {
+  color: rgba(255, 255, 255, 0.6039215686);
+}
+.AddPost .container .form-group input:focus,
+.AddPost .container .form-group textarea:focus,
+.EditPost .container .form-group input:focus,
+.EditPost .container .form-group textarea:focus {
+  border: none;
+}
+.AddPost .container .form-group textarea,
+.EditPost .container .form-group textarea {
+  width: 100%;
+  padding: 15px;
+}
+.AddPost .container .form-select,
+.EditPost .container .form-select {
+  margin: 15px 0px;
+  background-color: #5854c7;
+  outline: 0;
+  border: 0;
+  color: #fff;
+  font-size: 22px;
+  width: 100% !important;
+}
+.AddPost .container label,
+.EditPost .container label {
+  width: 100%;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.431372549);
+}
+.AddPost .container label.featured_label,
+.EditPost .container label.featured_label {
+  width: 10% !important;
+  margin-right: 0.5rem;
+  text-transform: capitalize;
+  font-size: 3vmin;
+}
+.AddPost .container .btn,
+.EditPost .container .btn {
+  text-transform: capitalize;
+  background-color: #6f6af8;
+  color: #fff;
+  padding: 0.375rem 1.375rem;
+}
+.AddPost .container .btn:checked,
+.EditPost .container .btn:checked {
+  background-color: #6f6af8;
+  color: #fff;
+}
+.AddPost .container p,
+.EditPost .container p {
+  margin: 20px 0;
+  font-size: 20px;
+  color: #fff;
+}
+.AddPost .container p a,
+.EditPost .container p a {
+  color: #5555e7;
+  text-transform: capitalize;
+}
+
+.MangePost {
+  width: 100%;
+  height: 100vh;
+  background-color: transparent;
+  overflow-y: scroll;
+  padding: 20px 0;
+  overflow-y: hidden;
+}
+.MangePost .title a {
+  font-size: 5vmin;
+  font-weight: bold;
+  color: #fff !important;
+}
+.MangePost table {
+  width: 100%;
+}
+.MangePost table thead tr {
+  color: #fff;
+  width: 70%;
+}
+.MangePost table thead tr th {
+  padding: 10px;
+  background-color: #1c1d5f;
+  font-size: 4.4vmin;
+  width: 10%;
+  text-transform: capitalize;
+  border: 3px solid #2a286b;
+}
+@media (max-width: 1200px) {
+  .MangePost table thead tr th {
+    font-size: 4.2vmin;
+  }
+}
+.MangePost table thead tr th:nth-child(1) {
+  width: 65%;
+}
+.MangePost table tbody tr {
+  color: #fff;
+  width: 70%;
+}
+.MangePost table tbody tr:nth-child(even) {
+  background-color: #1f1d55;
+}
+.MangePost table tbody tr td {
+  padding: 10px;
+  color: #7b7474;
+  font-size: 2.6vmin;
+  width: 10%;
+  text-transform: capitalize;
+}
+.MangePost table tbody tr td:nth-child(1):hover {
+  background-color: #1c1d5f;
+}
+.MangePost table tbody tr td:nth-child(1) {
+  width: 65%;
+}
+.MangePost table tbody tr td.edit button, .MangePost table tbody tr td.delete button {
+  color: #fff;
+  border-radius: 0.4rem;
+  padding: 5px 10px;
+}
+.MangePost table tbody tr td.edit button {
+  background-color: #5854c7;
+}
+.MangePost table tbody tr td.delete button {
+  background-color: red;
+}/*# sourceMappingURL=CatStyles.css.map */

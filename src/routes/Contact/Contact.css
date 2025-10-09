@@ -1,0 +1,11 @@
+.contact {
+  background-color: #6f6af8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 81px;
+}
+.contact h1 {
+  font-size: 50px;
+  color: #fff;
+}/*# sourceMappingURL=Contact.css.map */

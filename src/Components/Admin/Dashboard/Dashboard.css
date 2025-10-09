@@ -1,0 +1,92 @@
+.dashboard {
+  background-color: #1c1d5f;
+  padding: 6rem 0;
+}
+.dashboard .dashboard_container {
+  width: 90%;
+  margin: auto;
+  background-color: #2a286b;
+  padding: 25px;
+  margin-top: 80px;
+}
+.dashboard .dashboard_container .slide:nth-child(1) {
+  padding: 15px;
+}
+@media (max-width: 992px) {
+  .dashboard .dashboard_container .slide:nth-child(1) {
+    width: 50%;
+    margin: auto;
+  }
+}
+@media (max-width: 768px) {
+  .dashboard .dashboard_container .slide:nth-child(1) {
+    width: 70% !important;
+    margin: auto;
+  }
+}
+@media (max-width: 576px) {
+  .dashboard .dashboard_container .slide:nth-child(1) {
+    width: 100% !important;
+    margin: auto;
+  }
+}
+.dashboard .dashboard_container .slide:nth-child(1) .list-itmes {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  box-shadow: 0 0 20px 0px rgb(7, 9, 65);
+}
+.dashboard .dashboard_container .slide:nth-child(1) .list-itmes li {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #6f6af8;
+  border-bottom: 2px solid #000;
+  cursor: pointer;
+}
+.dashboard .dashboard_container .slide:nth-child(1) .list-itmes li.active {
+  background-color: transparent;
+}
+.dashboard .dashboard_container .slide:nth-child(1) .list-itmes li:hover {
+  background-color: transparent;
+  border-bottom: none;
+}
+.dashboard .dashboard_container .slide:nth-child(1) .list-itmes li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  color: #fff;
+}
+.dashboard .dashboard_container .slide:nth-child(1) .list-itmes li a i {
+  font-size: 2vmin;
+  width: 20%;
+  text-align: center;
+}
+.dashboard .dashboard_container .slide:nth-child(1) .list-itmes li a span {
+  font-size: 3vmin;
+  width: 75%;
+  text-wrap: nowrap;
+  padding: 0 0.5rem;
+  text-align: start;
+}
+@media (max-width: 576px) {
+  .dashboard .dashboard_container .slide:nth-child(1) .list-itmes li a span {
+    font-size: 4.5vmin;
+  }
+}
+.dashboard .dashboard_container .slide:nth-child(2) {
+  padding-left: 2rem;
+  overflow-x: scroll;
+}
+.dashboard .dashboard_container .slide:nth-child(2)::-webkit-scrollbar {
+  width: 20px;
+}/*# sourceMappingURL=Dashboard.css.map */

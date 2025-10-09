@@ -1,0 +1,144 @@
+.Blog {
+  width: 100%;
+  background-color: #141552;
+  padding-top: 70px;
+}
+.Blog .search {
+  width: 40%;
+  height: 3.4rem;
+  text-align: center;
+  margin: 40px auto;
+  position: relative;
+}
+@media (max-width: 768px) {
+  .Blog .search {
+    width: 90%;
+  }
+}
+.Blog .search .input_serach {
+  width: 90%;
+  height: 100%;
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  top: 0;
+  bottom: 0;
+  background-color: #2f2f77;
+  border-radius: 10px;
+}
+.Blog .search .input_serach form {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.Blog .search .input_serach form #serachInput {
+  position: absolute;
+  left: 7%;
+  top: 0;
+  width: 90%;
+  height: 100%;
+  background: transparent;
+  padding: 0 10px;
+  font-size: 20px;
+  color: #fff;
+  font-size: 23px;
+}
+.Blog .search .input_serach form #serachInput ::-moz-placeholder {
+  text-transform: capitalize;
+  padding-left: 10px;
+}
+.Blog .search .input_serach form #serachInput ::placeholder {
+  text-transform: capitalize;
+  padding-left: 10px;
+}
+.Blog .search .input_serach .icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 5%;
+  height: 100%;
+  background: transparent;
+  padding: 0 20px;
+  color: #fff;
+  font-size: 17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Blog .posts {
+  padding: 10px 10%;
+  gap: 10%;
+  align-items: center;
+  justify-content: center;
+}
+.Blog .categories_container {
+  border-top: 2px solid #1c1d5f;
+  border-bottom: 2px solid #1c1d5f;
+  margin: 0 auto;
+  padding: 4rem;
+  margin-top: 70px;
+  justify-content: center;
+}
+.Blog .categories_container a {
+  padding: 6px 12px;
+  border-radius: 12px;
+  background-color: #6f6af8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  margin-bottom: 10px;
+  font-size: 4vmin;
+  text-wrap: nowrap;
+  cursor: pointer;
+  transition: 0.3s;
+}
+@media (max-width: 992px) {
+  .Blog .categories_container a {
+    font-size: 3.2vmin;
+  }
+}
+@media (max-width: 480px) {
+  .Blog .categories_container a {
+    font-size: 2.2vmin;
+  }
+}
+.Blog .categories_container a:hover {
+  opacity: 0.8;
+}
+.Blog .categories_container .nocategory {
+  color: #fff !important;
+  text-align: center !important;
+  text-transform: capitalize !important;
+}
+.Blog .Topbutton {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #6f6af8;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  font-size: 14px;
+  clip-path: polygon(50% 10%, 100% 100%, 0% 100%);
+}
+.Blog .Topbutton:hover {
+  animation: move 0.2s ease-in-out both;
+}
+
+@keyframes move {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}/*# sourceMappingURL=BlogSyles.css.map */

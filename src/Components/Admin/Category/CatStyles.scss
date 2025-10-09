@@ -1,0 +1,228 @@
+@use "../../../styles/variables/colors" as *;
+@use "../../../styles/variables/mediaQuery" as *;
+@use "../../../styles/mixins" as *;
+
+.AddCategory,
+.EditCategory {
+  width: 100%;
+  height: 100vh;
+  background-color: $mainColor-2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: scroll;
+  padding: 20px 0;
+
+  .container {
+    margin-top: 80px;
+    width: 50%;
+    @include mediaQuery($smallScreen_max_width) {
+      width: 80%;
+    }
+    .title {
+      color: #fff;
+      font-size: 33px;
+    }
+    .form-group {
+      margin: 15px 0px;
+      input,
+      textarea {
+        background-color: $bg-color;
+        outline: 0;
+        border: 0;
+        color: #fff;
+        font-size: 22px;
+        &::placeholder {
+          color: #ffffff9a;
+        }
+        &:focus {
+          border: none;
+        }
+      }
+      textarea {
+        width: 100%;
+        padding: 15px;
+      }
+    }
+    .btn {
+      text-transform: capitalize;
+      background-color: $mainColor;
+      color: #fff;
+      padding: 0.375rem 1.375rem;
+      &:checked {
+        background-color: $mainColor;
+        color: #fff;
+      }
+    }
+    p {
+      margin: 20px 0;
+      font-size: 20px;
+      color: #fff;
+      a {
+        color: #5555e7;
+        text-transform: capitalize;
+      }
+    }
+  }
+}
+
+.MangeCategory {
+  width: 100%;
+  height: 100vh;
+  background-color: transparent;
+  overflow-y: scroll;
+  padding: 20px 0;
+  overflow-y: hidden;
+
+  .title {
+    a {
+      font-size: 5vmin;
+      font-weight: bold;
+      color: #fff !important;
+    }
+  }
+  table {
+    width: 100%;
+    thead tr {
+      color: #fff;
+
+      width: 70%;
+      th {
+        padding: 10px;
+        background-color: $mainColor-2;
+        font-size: 4.4vmin;
+        width: 10%;
+        text-transform: capitalize;
+        border: 3px solid #2a286b;
+        @include mediaQuery($largeScreen_max_width) {
+          font-size: 4.2vmin;
+        }
+        &:nth-child(1) {
+          width: 65%;
+        }
+      }
+    }
+    tbody tr {
+      color: #fff;
+      width: 70%;
+      &:nth-child(even) {
+        background-color: #1f1d55;
+      }
+      td {
+        padding: 10px;
+        color: #7b7474;
+        font-size: 2.6vmin;
+        width: 10%;
+        text-transform: capitalize;
+
+        &:nth-child(1):hover {
+          background-color: $mainColor-2;
+        }
+
+        &:nth-child(1) {
+          width: 65%;
+        }
+        &.edit,
+        &.delete {
+          button {
+            color: #fff;
+            background: $mainColor-2;
+            border-radius: 0.4rem;
+            padding: 5px 10px;
+          }
+        }
+        &.edit {
+          button {
+            background-color: $bg-color;
+          }
+        }
+
+        &.delete {
+          button {
+            background-color: red;
+          }
+        }
+      }
+    }
+  }
+}
+
+.show-posts-category {
+  width: 100%;
+  background-color: #141552;
+  padding-top: 70px;
+  .title_container{
+    width: 100%;
+    padding: 15px 0 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #1c1d5f;
+    margin-bottom: 4rem;
+    h1{
+      color: #fff;
+      font-size: 6vmin;
+      text-transform: capitalize;
+    }
+  }
+  .posts {
+    padding: 10px 10%;
+    gap: 10%;
+    align-items: center;
+    justify-content: center;
+  }
+  .categories_container {
+    border-top: 2px solid $mainColor-2;
+    border-bottom: 2px solid $mainColor-2;
+    margin: 0 auto;
+    padding: 4rem;
+    margin-top: 70px;
+    justify-content: center;
+    a {
+      padding: 6px 12px;
+      border-radius: 12px;
+      background-color: $mainColor;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      margin-bottom: 10px;
+      font-size: 4vmin;
+      text-wrap: nowrap;
+      cursor: pointer;
+      transition: 0.3s;
+      @include mediaQuery($medScreen_max_width) {
+        font-size: 3.2vmin;
+      }
+      @include mediaQuery($mobile_max_width) {
+        font-size: 2.2vmin;
+      }
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+    .nocategory {
+      color: #fff !important;
+      text-align: center !important;
+      text-transform: capitalize !important;
+    }
+  }
+  .Topbutton {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: $mainColor;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    font-size: 14px;
+    // clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    clip-path: polygon(50% 10%, 100% 100%, 0% 100%);
+    &:hover {
+      animation: move 0.2s ease-in-out both;
+    }
+  }
+}

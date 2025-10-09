@@ -1,0 +1,82 @@
+.EditUser {
+  width: 100%;
+  height: 100vh;
+  background-color: #1c1d5f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: scroll;
+  padding: 20px 0;
+}
+.EditUser .container {
+  margin-top: 80px;
+  width: 50%;
+}
+@media (max-width: 768px) {
+  .EditUser .container {
+    width: 80%;
+  }
+}
+.EditUser .container .title {
+  color: #fff;
+  font-size: 33px;
+}
+.EditUser .container .form-group {
+  margin: 15px 0px;
+}
+.EditUser .container .form-group input,
+.EditUser .container .form-group textarea {
+  background-color: #5854c7;
+  outline: 0;
+  border: 0;
+  color: #fff;
+  font-size: 22px;
+}
+.EditUser .container .form-group input::-moz-placeholder, .EditUser .container .form-group textarea::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.6039215686);
+}
+.EditUser .container .form-group input::placeholder,
+.EditUser .container .form-group textarea::placeholder {
+  color: rgba(255, 255, 255, 0.6039215686);
+}
+.EditUser .container .form-group input:focus,
+.EditUser .container .form-group textarea:focus {
+  border: none;
+}
+.EditUser .container .form-group textarea {
+  width: 100%;
+  padding: 15px;
+}
+.EditUser .container .form-select {
+  margin: 15px 0px;
+  background-color: #5854c7;
+  outline: 0;
+  border: 0;
+  color: #fff;
+  font-size: 22px;
+  width: 100% !important;
+}
+.EditUser .container label {
+  width: 100%;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.431372549);
+}
+.EditUser .container .btn {
+  text-transform: capitalize;
+  background-color: #6f6af8;
+  color: #fff;
+  padding: 0.375rem 1.375rem;
+}
+.EditUser .container .btn:checked {
+  background-color: #6f6af8;
+  color: #fff;
+}
+.EditUser .container p {
+  margin: 20px 0;
+  font-size: 20px;
+  color: #fff;
+}
+.EditUser .container p a {
+  color: #5555e7;
+  text-transform: capitalize;
+}/*# sourceMappingURL=EdituserStyles.css.map */

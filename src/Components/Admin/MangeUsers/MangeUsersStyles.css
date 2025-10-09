@@ -1,0 +1,68 @@
+.MangeUsers {
+  width: 100%;
+  height: 100vh;
+  background-color: transparent;
+  overflow-y: scroll;
+  padding: 20px 0;
+  overflow-y: hidden;
+  padding-top: 80px;
+}
+.MangeUsers .title a {
+  font-size: 5vmin;
+  font-weight: bold;
+  color: #fff !important;
+}
+.MangeUsers table {
+  width: 100%;
+}
+.MangeUsers table thead tr {
+  color: #fff;
+  width: 70%;
+}
+.MangeUsers table thead tr th {
+  padding: 10px;
+  background-color: #1c1d5f;
+  font-size: 4.4vmin;
+  width: 10%;
+  text-transform: capitalize;
+  border: 3px solid #2a286b;
+}
+@media (max-width: 1200px) {
+  .MangeUsers table thead tr th {
+    font-size: 4.2vmin;
+  }
+}
+.MangeUsers table thead tr th:nth-child(1) {
+  width: 65%;
+}
+.MangeUsers table tbody tr {
+  color: #fff;
+  width: 70%;
+}
+.MangeUsers table tbody tr:nth-child(even) {
+  background-color: #1f1d55;
+}
+.MangeUsers table tbody tr td {
+  padding: 10px;
+  color: #7b7474;
+  font-size: 2.6vmin;
+  width: 10%;
+  text-transform: capitalize;
+}
+.MangeUsers table tbody tr td:nth-child(1):hover {
+  background-color: #1c1d5f;
+}
+.MangeUsers table tbody tr td:nth-child(1) {
+  width: 65%;
+}
+.MangeUsers table tbody tr td.edit button, .MangeUsers table tbody tr td.delete button {
+  color: #fff;
+  border-radius: 0.4rem;
+  padding: 5px 10px;
+}
+.MangeUsers table tbody tr td.edit button {
+  background-color: #5854c7;
+}
+.MangeUsers table tbody tr td.delete button {
+  background-color: red;
+}/*# sourceMappingURL=MangeUsersStyles.css.map */

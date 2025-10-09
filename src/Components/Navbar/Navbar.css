@@ -1,0 +1,224 @@
+.myNav {
+  font-family: "Zain", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  border-radius: 0;
+  -ms-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+  overflow: visible;
+  border: none;
+  z-index: 99;
+  width: 100%;
+  height: 70px;
+  line-height: 70px;
+  background-color: #6f6af8;
+  color: #fff;
+  position: fixed !important;
+}
+@media (max-width: 992px) {
+  .myNav {
+    flex-direction: row-reverse !important;
+  }
+}
+.myNav .navbar-toggler {
+  border: none !important;
+  color: #fff !important;
+  float: right;
+  transition: 0.4s;
+}
+.myNav .navbar-toggler:focus {
+  box-shadow: none;
+}
+.myNav::before, .myNav::after {
+  display: table;
+  content: " ";
+}
+.myNav .navbar-icon {
+  display: flex;
+  margin-left: 15%;
+  gap: 10px;
+  height: 100%;
+}
+.myNav .navbar-icon .level-title-container {
+  display: inline-flex;
+  color: #fff;
+  padding: 23px 0;
+  font-size: 5vmin;
+  font-weight: bold;
+  height: 100%;
+  align-items: center;
+}
+.myNav .collapse {
+  justify-content: end;
+  height: 100%;
+  background: transparent;
+}
+.myNav .collapse.show {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1c1d5f !important;
+  position: fixed;
+  width: 0%;
+  right: 0%;
+  top: 70px;
+  margin: 0 !important;
+  height: 45% !important;
+  animation: visible 0.5s linear both;
+}
+.myNav .collapse.show .navbar-nav {
+  margin: 0 !important;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0%;
+}
+.myNav .collapse.show .navbar-nav .nav-item {
+  border-top: 3px solid #111124;
+  justify-content: center;
+}
+.myNav .collapse.show .navbar-nav .nav-item.nav_profile {
+  position: relative;
+}
+.myNav .collapse.show .navbar-nav .nav-item.nav_profile:hover .user_setting {
+  transform: scale(1) !important;
+}
+.myNav .collapse.show .navbar-nav .nav-item.nav_profile .avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.myNav .collapse.show .navbar-nav .nav-item.nav_profile .avatar img {
+  width: 3.5rem;
+}
+.myNav .collapse.show .navbar-nav .nav-item.nav_profile .user_setting {
+  transform: scale(0);
+  transition: 0.4s;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 108%;
+  right: 18%;
+  background-color: #1c1d5f;
+  padding: 0;
+  margin: 0;
+  box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.4);
+}
+.myNav .collapse.show .navbar-nav .nav-item .nav-link {
+  width: 100%;
+  justify-content: center;
+}
+.myNav .collapse div {
+  height: 100%;
+}
+.myNav .collapse .navbar-nav {
+  width: 60%;
+  height: 100%;
+  justify-content: start;
+}
+.myNav .collapse .navbar-nav .nav-item {
+  position: relative;
+  padding: 5px 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.myNav .collapse .navbar-nav .nav-item .nav-link h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff !important;
+}
+.myNav .collapse .navbar-nav .nav-item .nav-link h1:hover {
+  border-bottom: 2px solid #1c1d5f;
+}
+.myNav .collapse .navbar-nav .nav-item a i {
+  font-size: 20px;
+  color: #fff;
+}
+.myNav .collapse .navbar-nav .nav-item .nametop {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+}
+.myNav .collapse .navbar-nav .nav-item .arrow {
+  font-size: 1.2rem;
+}
+.myNav .collapse .navbar-nav .nav-item h1 {
+  color: #fff;
+  margin: 0px !important;
+  line-height: normal;
+  font-size: 1.4rem;
+  text-wrap: nowrap;
+}
+@media (min-width: 992px) {
+  .myNav .collapse .navbar-nav .nav-item h1 {
+    font-size: 1.6rem;
+  }
+}
+.myNav .collapse .navbar-nav .nav-item.nav_profile {
+  position: relative;
+}
+.myNav .collapse .navbar-nav .nav-item.nav_profile:hover .user_setting {
+  transform: scale(1) !important;
+}
+.myNav .collapse .navbar-nav .nav-item.nav_profile .avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.myNav .collapse .navbar-nav .nav-item.nav_profile .avatar img {
+  width: 2.5rem;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  border-radius: 50%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border: 0.3rem solid #1c1d5f;
+}
+.myNav .collapse .navbar-nav .nav-item.nav_profile .user_setting {
+  transform: scale(0);
+  transition: 0.4s;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 117%;
+  right: 18%;
+  background-color: #1c1d5f;
+  padding: 0;
+  margin: 0;
+  box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.4);
+}
+.myNav .collapse .navbar-nav .nav-item.nav_profile .user_setting li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 100%;
+  overflow: hidden;
+}
+.myNav .collapse .navbar-nav .nav-item.nav_profile .user_setting li:last-child a {
+  background-color: rgb(255, 0, 0);
+}
+.myNav .collapse .navbar-nav .nav-item.nav_profile .user_setting li a {
+  color: #fff;
+  text-transform: capitalize;
+  padding: 1.7rem !important;
+  display: block;
+  width: 100%;
+}
+.myNav .collapse .navbar-nav .nav-item.nav_profile .user_setting li a h1 {
+  font-size: 1.7rem !important;
+}
+
+@keyframes visible {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 12rem;
+  }
+}/*# sourceMappingURL=Navbar.css.map */

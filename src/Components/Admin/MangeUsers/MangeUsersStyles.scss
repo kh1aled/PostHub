@@ -1,0 +1,84 @@
+@use '../../../styles/variables/colors' as *;
+@use '../../../styles/variables/mediaQuery' as *;
+@use "../../../styles/mixins" as *;
+
+.MangeUsers{
+    width: 100%;
+    height: 100vh;
+    background-color: transparent;
+    overflow-y: scroll;
+    padding: 20px 0;
+    overflow-y: hidden;
+    padding-top: 80px;
+
+    .title {
+        a {
+          font-size: 5vmin;
+          font-weight: bold;
+          color: #fff !important;
+        }
+      }
+      table {
+        width: 100%;
+        thead tr {
+          color: #fff;
+
+          width: 70%;
+          th {
+            padding: 10px;
+            background-color: $mainColor-2;
+            font-size: 4.4vmin;
+            width: 10%;
+            text-transform: capitalize;
+            border: 3px solid #2a286b;
+            @include mediaQuery($largeScreen_max_width){
+              font-size: 4.2vmin;
+            }
+            &:nth-child(1) {
+              width: 65%;
+            }
+          }
+        }
+        tbody tr {
+          color: #fff;
+          width: 70%;
+          &:nth-child(even){
+            background-color: #1f1d55;
+          }
+          td {
+            padding: 10px;
+            color: #7b7474;
+            font-size: 2.6vmin;
+            width: 10%;
+            text-transform: capitalize;
+          
+            &:nth-child(1):hover{
+              background-color: $mainColor-2;
+            }
+
+            &:nth-child(1) {
+              width: 65%;
+            }
+            &.edit,
+            &.delete {
+              button {
+                color: #fff;
+                border-radius: 0.4rem;
+                padding: 5px 10px;
+              }
+            }
+            &.edit {
+              button {
+                background-color: $bg-color;
+              }
+            }
+
+            &.delete {
+              button {
+                background-color: red;
+              }
+            }
+          }
+        }
+      }
+}

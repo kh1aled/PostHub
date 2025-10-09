@@ -1,0 +1,17 @@
+@use "../../styles/variables/colors" as *;
+@use "../../styles/variables/mediaQuery" as *;
+@use "../../styles/mixins" as *;
+
+
+.contact{
+  background-color: $mainColor;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 81px;
+  h1{
+    font-size: 50px;
+    color: #fff;
+
+  }
+}
