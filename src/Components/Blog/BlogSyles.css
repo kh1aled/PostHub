@@ -33,7 +33,7 @@
   height: 100%;
   display: block;
 }
-.Blog .search .input_serach form #serachInput {
+.Blog .search .input_serach form #searchInput {
   position: absolute;
   left: 7%;
   top: 0;
@@ -45,11 +45,11 @@
   color: #fff;
   font-size: 23px;
 }
-.Blog .search .input_serach form #serachInput ::-moz-placeholder {
+.Blog .search .input_serach form #searchInput ::-moz-placeholder {
   text-transform: capitalize;
   padding-left: 10px;
 }
-.Blog .search .input_serach form #serachInput ::placeholder {
+.Blog .search .input_serach form #searchInput ::placeholder {
   text-transform: capitalize;
   padding-left: 10px;
 }

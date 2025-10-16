@@ -1,0 +1,61 @@
+.dropdown_container {
+  position: relative;
+}
+.dropdown_container .dropdown_toggle {
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: #555;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+.dropdown_container .dropdown_toggle:hover {
+  color: #00b894;
+}
+.dropdown_container .dropdown_menu {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  background: #6f6af8;
+  border-radius: 8px;
+  list-style: none;
+  padding: 8px 0;
+  min-width: 120px;
+  z-index: 10;
+}
+.dropdown_container .dropdown_menu li {
+  width: 100%;
+  text-align: center;
+}
+.dropdown_container .dropdown_menu li a {
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+  padding: 4px 6px;
+}
+.dropdown_container .dropdown_menu li a:hover {
+  background-color: #2a286b;
+}
+.dropdown_container .dropdown_menu li button {
+  background: none;
+  border: none;
+  width: 100%;
+  text-align: left;
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  color: white;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  cursor: pointer;
+  text-align: center;
+}
+.dropdown_container .dropdown_menu li button:hover {
+  background-color: #2a286b;
+}
+.dropdown_container .dropdown_menu li button.delete {
+  color: #e74c3c;
+}
+.dropdown_container .dropdown_menu li button.delete:hover {
+  background: #fdecea;
+}/*# sourceMappingURL=DropdownStyle.css.map */

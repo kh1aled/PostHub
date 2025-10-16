@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./PostSyles.css";
 import { Link } from "react-router-dom";
+import Dropdown from "../Dropdown/Dropdown";
 
 const Post = ({
   image,
@@ -11,7 +12,10 @@ const Post = ({
   id,
   time,
   is_featured,
+  onDelete,
+
 }) => {
+
   const [data, setData] = useState({});
   const [username, setUsername] = useState({});
   const [loading, setLoading] = useState(true);
@@ -47,7 +51,6 @@ const Post = ({
     fetchAll();
   }, [categoryId, author_id]);
 
-
   return (
     <div
       key={id}
@@ -57,12 +60,23 @@ const Post = ({
       <div className="post_thumbail">
         <img src={image} alt={title} />
       </div>
+
       <div className="post_info">
-        <Link className="categroy_button">{data.title}</Link>
+        <div className="top_container" style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+          {/* زرار الكاتيجوري */}
+          <Link className="categroy_button">{data.title}</Link>
+
+          {/* القائمة المنسدلة */}
+          <Dropdown
+            postId={id}
+            onDelete={onDelete} />
+        </div>
+
         <h2 className="post_title">
           <Link>{title}</Link>
         </h2>
         <p className="post_body">{body}</p>
+
         <div className="post_author">
           <div className="post_author_avatar">
             <img src={username.avatar} alt={username.firstname} />
@@ -74,7 +88,8 @@ const Post = ({
                   <h5>Loading author...</h5>
                 ) : (
                   <h5>
-                    by : {username?.firstname || "Unknown"} {username?.lastname || ""}
+                    by : {username?.firstname || "Unknown"}{" "}
+                    {username?.lastname || ""}
                   </h5>
                 )}
               </li>

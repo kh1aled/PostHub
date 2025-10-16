@@ -1,0 +1,18 @@
+.skeleton_post .skeleton_block {
+  background-color: #141552; /* اللون اللي طلبته */
+  border-radius: 5px;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.6;
+  }
+}
+
